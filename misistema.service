@@ -1,0 +1,10 @@
+[Unit]
+Description=Servicio de arranque de los leds
+After=multi-user.target
+[Service]
+Type=simple
+ExecStart=/home/ciscopapu/leds
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
